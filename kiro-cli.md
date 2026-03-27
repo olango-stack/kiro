@@ -163,6 +163,58 @@ After Kiro generates the file (/infrastructure/outputs.tf is also updated with D
    Show me the content of ddb.tf and explain any security considerations or potential cost implications
 
 Expand - Terraform code for DynamoDB
+
+# DynamoDB table for Users
+resource "aws_dynamodb_table" "users_table" {
+  name         = "${var.workshop_stack_base_name}_users"
+  billing_mode = "PAY_PER_REQUEST"
+  hash_key     = "userid"
+
+  attribute {
+    name = "userid"
+    type = "S"
+  }
+  
+  point_in_time_recovery {
+    enabled = true
+  }
+  
+  server_side_encryption {
+    enabled = true
+  }
+
+  tags = {
+    Name        = "${var.workshop_stack_base_name}_Users"
+    Environment = "Workshop"
+    Project     = "Serverless Patterns"
+  }
+}
+
+# Output the DynamoDB table details
+output "users_table_arn" {
+  description = "DynamoDB Users table ARN"
+  value       = aws_dynamodb_table.users_table.arn
+}
+
+output "users_table_id" {
+  description = "DynamoDB Users table ID"
+  value       = aws_dynamodb_table.users_table.id
+}
+
+output "users_table_name" {
+  description = "DynamoDB Users table name"
+  value       = aws_dynamodb_table.users_table.name
+}
+
+
+
+
+
+
+
+
+
+
 🎮 Terraform Code Detective Challenge
 Let's play a game! As a Terraform Code Detective, your mission is to analyze the generated DynamoDB table configuration and identify key security and performance features. This will help you understand the code better and prepare you for real-world infrastructure development.
 
