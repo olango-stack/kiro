@@ -1,0 +1,4 @@
+# file: /home/ec2-user/workspace/my-workspace/src/authorizer/lambda_function.py
+# hypothesis_version: 6.151.9
+
+['%Y-%m-%dT%H:%M:%SZ', '*', '2012-10-17', 'Action', 'Allow', 'COGNITO_REGION', 'COGNITO_USER_POOL_ID', 'Deny', 'Effect', 'INFO', 'RS256', 'Resource', 'Statement', 'Unauthorized', 'Version', 'allow', 'authorizationToken', 'bearer ', 'deny', 'empty token', 'execute-api:Invoke', 'invalid token claims', 'level', 'methodArn', 'outcome', 'policyDocument', 'principalId', 'reason', 'sub', 'timestamp', 'unauthorized', 'unknown', 'us-east-1', 'utf-8']

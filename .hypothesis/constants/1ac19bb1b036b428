@@ -1,0 +1,4 @@
+# file: /home/ec2-user/workspace/my-workspace/src/customers/lambda_function.py
+# hypothesis_version: 6.151.9
+
+[100, 200, 201, 400, 404, 409, 500, '%Y-%m-%dT%H:%M:%SZ', ', ', ':email', 'ALL_NEW', 'Attributes', 'Code', 'Content-Type', 'Count', 'Customer not found', 'DYNAMODB_TABLE', 'Email already exists', 'Error', 'ExclusiveStartKey', 'Invalid JSON body', 'Invalid email format', 'Invalid next_token', 'Item', 'Items', 'LastEvaluatedKey', 'Limit', 'Missing customer_id', 'N', 'S', 'SET ', 'TableName', 'application/json', 'body', 'company', 'created_at', 'customer_id', 'customers', 'email', 'email = :email', 'email-index', 'error', 'first_name', 'headers', 'last_name', 'level', 'limit', 'message', 'next_token', 'notes', 'pathParameters', 'phone', 'statusCode', 'timestamp', 'updated_at']

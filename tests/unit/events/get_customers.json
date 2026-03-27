@@ -1,0 +1,61 @@
+{
+  "httpMethod": "GET",
+  "resource": "/customers",
+  "path": "/customers",
+  "pathParameters": null,
+  "queryStringParameters": {
+    "limit": "20"
+  },
+  "multiValueQueryStringParameters": {
+    "limit": ["20"]
+  },
+  "headers": {
+    "Accept": "application/json",
+    "Authorization": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.example",
+    "Host": "abc123.execute-api.us-east-1.amazonaws.com",
+    "User-Agent": "curl/7.79.1",
+    "X-Amzn-Trace-Id": "Root=1-63f1a2b3-1234567890abcdef12345678",
+    "X-Forwarded-For": "203.0.113.42",
+    "X-Forwarded-Port": "443",
+    "X-Forwarded-Proto": "https"
+  },
+  "multiValueHeaders": {
+    "Accept": ["application/json"]
+  },
+  "body": null,
+  "isBase64Encoded": false,
+  "stageVariables": null,
+  "requestContext": {
+    "accountId": "123456789012",
+    "apiId": "abc123",
+    "authorizer": {
+      "principalId": "user-sub-uuid-here"
+    },
+    "domainName": "abc123.execute-api.us-east-1.amazonaws.com",
+    "domainPrefix": "abc123",
+    "extendedRequestId": "XyZ1234AbCdEfGh=",
+    "httpMethod": "GET",
+    "identity": {
+      "accessKey": null,
+      "accountId": null,
+      "caller": null,
+      "cognitoAuthenticationProvider": null,
+      "cognitoAuthenticationType": null,
+      "cognitoIdentityId": null,
+      "cognitoIdentityPoolId": null,
+      "principalOrgId": null,
+      "sourceIp": "203.0.113.42",
+      "user": null,
+      "userAgent": "curl/7.79.1",
+      "userArn": null
+    },
+    "path": "/customers",
+    "protocol": "HTTP/1.1",
+    "requestId": "XyZ1234AbCdEfGh=",
+    "requestTime": "15/Jan/2024:10:30:00 +0000",
+    "requestTimeEpoch": 1705314600000,
+    "resourceId": "abc123",
+    "resourcePath": "/customers",
+    "stage": "dev"
+  }
+}
