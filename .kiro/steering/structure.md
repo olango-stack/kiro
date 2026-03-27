@@ -7,7 +7,7 @@ project-root/
 │   ├── authorizer/
 │   │   ├── lambda_function.py
 │   │   └── requirements.txt
-│   └── users/
+│   └── customers/
 │       ├── lambda_function.py
 │       └── requirements.txt
 ├── tests/
